@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_record_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_rename_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/title_left"
+            android:layout_marginTop="@dimen/title_top"
+            android:text="@string/title_record"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/title_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_record_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/recorder_title_bottom"
+            android:gravity="center"
+            android:text="@string/ready"
+            android:textColor="@color/text"
+            android:textSize="@dimen/label_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/button_bottom"
+            android:background="@drawable/bg_button_red"
+            android:src="@drawable/record"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_pause"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/button_side_space"
+            android:layout_marginBottom="@dimen/button_bottom"
+            android:background="@drawable/bg_button_red"
+            android:src="@drawable/pause"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/bg_menu"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

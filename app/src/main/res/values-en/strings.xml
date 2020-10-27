@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recorder</string>
+    <string name="title_record">Record</string>
+    <string name="my_recording">My recording</string>
+    <string name="ready">Press to start</string>
+    <string name="recording">Recording - %02d:%02d</string>
+    <string name="error_starting_record">Record Failed</string>
+    <string name="error_saving">Save Failed</string>
+    <string name="save_success">Saved</string>
+    <string name="title_play">Play</string>
+    <string name="no_file">No File</string>
+    <string name="error_pausing">Pause Failed</string>
+    <string name="error_resuming">Resume Failed</string>
+    <string name="record_pause_success">Paused - %02d:%02d</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="error_deleting">Delete Failed</string>
+    <string name="play_audio">Play Audio</string>
+    <string name="error_unsupported_action">Unsupported Action</string>
+    <string name="reading">Reading</string>
+    <string name="playing">%s\nPlaying - %02d:%02d/%02d:%02d</string>
+    <string name="play_pause_success">%s\nPaused - %02d:%02d/%02d:%02d</string>
+    <string name="error_starting_play">Play Failed</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="rename">Rename</string>
+    <string name="error_renaming">Rename Failed</string>
+    <string name="decide">Confirm</string>
+    <string name="please_enter_file_name">Please enter the filename!</string>
+    <string name="error_file_already_exists">File already exists!</string>
+    <string name="cannot_be_more_longer">Cannot be more longer!</string>
+    <string name="hint_enter">Enter…</string>
+    <string name="no_menu_item">No Menu Item</string>
+    <string name="share_this_app">Share this app</string>
+    <string name="about">About</string>
+    <string name="save_as">Save as</string>
+    <string name="delete_success">Deleted</string>
+    <string name="last_not_saved_record">Last not saved recording</string>
+    <string name="ad_0">I\'m using \"Recorder\", you try it too!</string>
+    <string name="ad_1">Recommend to you \"Recorder\"!</string>
+    <string name="copyright">©2020 XTC Developer Studio All rights reserved.</string>
+    <string name="author_qq">QQ:1171188146</string>
+    <string name="author">made by FatFish</string>
+    <string name="rename_success">Rename successfully</string>
+</resources>

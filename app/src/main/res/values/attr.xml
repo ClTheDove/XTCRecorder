@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="circle_width" format="dimension" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="circle_color" format="color" />
+        <attr name="progress_color" format="color" />
+        <attr name="start_color" format="color" />
+        <attr name="end_color" format="color" />
+        <attr name="progress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+</resources>

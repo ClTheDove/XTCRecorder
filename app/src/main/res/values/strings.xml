@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">录音机</string>
+    <string name="title_record">录音</string>
+    <string name="my_recording">我的录音</string>
+    <string name="ready">轻按开始</string>
+    <string name="recording" formatted="true">正在录音 - %02d:%02d</string>
+    <string name="error_starting_record">录音失败</string>
+    <string name="error_saving">保存失败</string>
+    <string name="save_success">已保存</string>
+    <string name="title_play">播放</string>
+    <string name="record_folder" translatable="false">Records</string>
+    <string name="record_file_prefix" translatable="false">.aac</string>
+    <string name="no_file">没有文件</string>
+    <string name="error_pausing">暂停失败</string>
+    <string name="error_resuming">继续失败</string>
+    <string name="record_pause_success" formatted="true">已暂停录音 - %02d:%02d</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="error_deleting">删除失败</string>
+    <string name="play_audio">播放音频</string>
+    <string name="audio_type" translatable="false">audio/</string>
+    <string name="uri_file_header" translatable="false">file://</string>
+    <string name="error_unsupported_action">不支持的操作</string>
+    <string name="reading">正在读取</string>
+    <string name="playing" formatted="true">%s\n正在播放 - %02d:%02d/%02d:%02d</string>
+    <string name="play_pause_success" formatted="true">%s\n已暂停 - %02d:%02d/%02d:%02d</string>
+    <string name="error_starting_play">播放失败</string>
+    <string name="error_file_not_found">文件不存在</string>
+    <string name="rename">重命名</string>
+    <string name="error_renaming">重命名失败</string>
+    <string name="decide">确认</string>
+    <string name="please_enter_file_name">请输入文件名</string>
+    <string name="error_file_already_exists">该文件已存在</string>
+    <string name="cannot_be_more_longer">不能再长啦</string>
+    <string name="hint_enter">请输入…</string>
+    <string name="no_menu_item">无菜单项</string>
+    <string name="share_this_app">分享本应用</string>
+    <string name="about">关于</string>
+    <string name="save_as">保存为</string>
+    <string name="delete_success">已删除</string>
+    <string name="last_not_saved_record">上次未保存的录音</string>
+    <string name="ad_0">我正在用“录音机”,你也试试吧!</string>
+    <string name="ad_1">推荐给你“录音机”!</string>
+    <string name="app_version_debug" translatable="false">V%s(%d) Debug</string>
+    <string name="app_version_release" translatable="false">V%s(%d)</string>
+    <string name="author_qq">作者QQ:1171188146</string>
+    <string name="copyright">©2020 XTC Developer Studio 版权所有</string>
+    <string name="author">制作 by FatFish</string>
+    <string name="rename_success">重命名成功</string>
+</resources>

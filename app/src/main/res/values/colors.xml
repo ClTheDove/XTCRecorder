@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#000000</color>
+    <color name="text">#ffffff</color>
+    <color name="title_text">#ff4f4f</color>
+    <color name="progress">#dc2323</color>
+    <color name="progress_circle">#4e4c4a</color>
+    <color name="ripple">#17f2f2f2</color>
+    <color name="list_item_bg">#4f2a2b2c</color>
+    <color name="list_item_text">#7fffffff</color>
+    <color name="hint_text">#999999</color>
+    <color name="toast_bg">#222222</color>
+    <color name="progress_bg">#f0f0f0</color>
+    <color name="transparent">#00000000</color>
+</resources>

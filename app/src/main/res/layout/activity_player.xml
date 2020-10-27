@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_player_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_rename_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/title_left"
+            android:layout_marginTop="@dimen/title_top"
+            android:text="@string/title_play"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/title_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/player_title_bottom"
+            android:gravity="center"
+            android:text="@string/reading"
+            android:textColor="@color/text"
+            android:textSize="@dimen/label_text_size" />
+
+        <xds.fishy.widget.progressbar.RoundProgressBar
+            android:id="@+id/rpb"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/button_bottom"
+            custom:circle_color="@color/progress_circle"
+            custom:circle_width="@dimen/progress_circle_width"
+            custom:progress="0"
+            custom:progress_color="@color/progress"
+            custom:progress_width="@dimen/progress_width" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/button_bottom"
+            android:scaleType="center"
+            android:src="@drawable/start"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_fast_backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/fast_forward_backward_bottom"
+            android:src="@drawable/bg_fast_backward"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_fast_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/fast_forward_backward_bottom"
+            android:src="@drawable/bg_fast_forward"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_volume_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_volume_down"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_volume_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_volume_up"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+</LinearLayout>

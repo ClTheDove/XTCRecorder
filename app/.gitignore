@@ -1,0 +1,9 @@
+build/
+# debug/
+# release/
+# libs/shareapi-2.2.2.aar
+# libs/authapi-1.0.0-Dev.aar
+# .gitignore
+# proguard-rules.pro
+# src/main/java/xds/fishy/secret/appKey.java
+

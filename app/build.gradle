@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "xds.fishy.recorder"
+        minSdkVersion 25
+        targetSdkVersion 29
+        versionCode 29
+        versionName "0.7.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation files('libs/shareapi-2.2.2.aar')
+}

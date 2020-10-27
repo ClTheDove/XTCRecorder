@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_show_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dialog_button_side_space"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_cancel_delete"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/bg_button_black"
+                android:src="@drawable/cancel"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_below_button_bottom"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_below_button_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dialog_button_side_space"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/bg_button_red"
+                android:src="@drawable/delete"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_below_button_bottom"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_below_button_text_size" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_show_manage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dialog_button_side_space"
+            android:layout_marginTop="@dimen/dialog_button_top"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_manage_delete"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/bg_button_red"
+                android:src="@drawable/delete"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_below_button_bottom"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_below_button_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dialog_button_top"
+            android:layout_marginEnd="@dimen/dialog_button_side_space"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_manage_rename"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/bg_button_blue"
+                android:src="@drawable/edit"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_below_button_bottom"
+                android:gravity="center"
+                android:text="@string/rename"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_below_button_text_size" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cancel_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_cancel_button"
+            android:text="@string/cancel"
+            android:textColor="#99ffffff"
+            android:textSize="@dimen/cancel_button_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_show_rename"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/ed_rename_name"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:background="@color/bg"
+            android:cursorVisible="false"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="0sp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_rename_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/rename"
+            android:textColor="@color/text"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_rename_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rename_title"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_content"
+            android:paddingStart="7dp"
+            android:paddingTop="9dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="9dp"
+            android:text="@string/hint_enter"
+            android:textColor="@color/text"
+            android:textSize="@dimen/dialog_content_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_rename_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1dp"
+                    android:background="@drawable/bg_dialog_button_cancel"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/cancel"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_choice_button_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_rename_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/bg_dialog_button_decide"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/decide"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_choice_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_show_save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/ed_save_name"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:background="@color/bg"
+            android:cursorVisible="false"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="0sp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_save_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/save_as"
+            android:textColor="@color/text"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_save_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_save_title"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_content"
+            android:paddingStart="7dp"
+            android:paddingTop="9dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="9dp"
+            android:text="@string/hint_enter"
+            android:textColor="@color/text"
+            android:textSize="@dimen/dialog_content_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_save_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1dp"
+                    android:background="@drawable/bg_dialog_button_cancel"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/cancel"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_choice_button_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_save_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:background="@drawable/bg_dialog_button_decide"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/decide"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_choice_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

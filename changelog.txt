@@ -1,0 +1,30 @@
+0.0.1-1 —— Initial commit
+0.0.2-2 —— keep working
+0.1.0-3 —— add file list(by @PapercraftTeam)
+0.1.1-4 —— friendly fix
+0.1.2-5 —— remove file prefix
+0.1.3-6 —— add file filter
+0.1.4-7 —— keep working
+0.1.5-8 —— keep working
+0.1.6-9 —— fix
+0.2.0-10 —— finally finished record logic XD
+0.2.1-11 —— bugfix
+0.3.0-12 —— add pause and resume
+0.3.1-13 —— bugfix
+0.3.2-14 —— keep working
+0.4.0-15 —— long press to delete in list activity(not finished)
+0.4.1-16 —— bug fix
+0.4.2-17 —— keep working
+0.4.3-18 —— keep working
+0.5.0-19 —— add player(testing)
+0.6.0-20 —— add rename(testing)
+0.6.1-21 —— keep working
+0.6.2-22 —— keep working
+0.6.3-23 —— keep working
+0.6.4-24 —— add en translation
+0.6.5-25 —— implemented volume control and some important bugfix
+0.6.6-26 —— bugfix
+0.7.0-27 —— menu design, about, share app, fast backward/forward, ui image update...... and some important bugfix
+0.7.1-28 —— optimization and bug fix
+0.7.2-29 —— some little changes for interactive mechanism
+20201027 —— project has been archived :(
